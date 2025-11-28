@@ -1,40 +1,57 @@
-__pycache__
-*.pyc
-*.pyo
-*.pyd
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
 .Python
-env/
 venv/
-.venv
-pip-log.txt
-pip-delete-this-directory.txt
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.log
-.git
-.mypy_cache
-.pytest_cache
-.hypothesis
-instance/
-.env
-.env.*
-!.env.example
-*.db
-*.sqlite
-*.sqlite3
-app.db
-dev.db
-.DS_Store
+env/
+ENV/
+
+# IDEs
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
-migrations/__pycache__
-tests/__pycache__
+.DS_Store
 
+# Database
+*.db
+*.sqlite
+*.sqlite3
+app.db
+instance/
+
+# Environment
+.env
+.env.local
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Documentation
+*.md
+!README.md
+
+# Tests
+tests/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Railway
+.railway/
+
+# Logs
+*.log
+logs/
+
+# OS
+Thumbs.db
+
+# Development only files
+railway.env.template
+scripts/generate_test_users.py
