@@ -29,8 +29,7 @@ class Config:
     SERVER_EXTERNAL_BASE = os.getenv("SERVER_EXTERNAL_BASE", "http://localhost:5000/")
     CORS_ORIGINS = [origin.strip() for origin in os.getenv(
         "CORS_ORIGINS",
-        "http://localhost:5173,http://localhost:5174",
-        "https://qrbook-front.vercel.app/"
+        "http://localhost:5173,http://localhost:5174,https://qrbook-front.vercel.app"
     ).split(",") if origin.strip()]
     CORS_HEADERS = [
         header.strip()
