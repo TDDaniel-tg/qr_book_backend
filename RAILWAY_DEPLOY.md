@@ -58,8 +58,9 @@ curl https://ваш-backend-url/health
 - ✅ `Dockerfile` - контейнеризация
 - ✅ `railway.toml` - конфигурация
 - ✅ `start.sh` - скрипт запуска с миграциями
-- ✅ `requirements.txt` - зависимости
+- ✅ `requirements.txt` - зависимости (psycopg3)
 - ✅ `generate_secrets.py` - генератор ключей
+- ✅ `config.py` - автоматическая конвертация DATABASE_URL для psycopg3
 
 ### Автоматические процессы при деплое
 

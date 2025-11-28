@@ -15,7 +15,13 @@ flask --app app db upgrade
 
 # Проверка наличия данных в базе
 echo "🔍 Checking if database is seeded..."
-SEED_CHECK=$(python -c "from app import create_app; from app.extensions import db; from app.models import User; app = create_app(); with app.app_context(): print(User.query.count())")
+SEED_CHECK=$(python -c "
+from app import create_app
+from app.models import User
+app = create_app()
+with app.app_context():
+    print(User.query.count())
+")
 
 if [ "$SEED_CHECK" = "0" ]; then
     echo "🌱 Seeding database with initial data..."
